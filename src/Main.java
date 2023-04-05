@@ -45,7 +45,7 @@ public class Main {
 
         int population = 12_000_000;
         int birthRate = population/1000 * 17;
-        int deathRate = 12_000/1000 * 8;
+        int deathRate = population/1000 * 8;
         int period = 1;
 
         while (period <= 10) {
