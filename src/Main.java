@@ -44,12 +44,12 @@ public class Main {
         System.out.println("Задача 3");
 
         int population = 12_000_000;
-        int birthRate = population/1000 * 17;
-        int deathRate = population/1000 * 8;
+        int birthRate = 17;
+        int deathRate = 8;
         int period = 1;
 
         while (period <= 10) {
-            population = population + birthRate - deathRate;
+            population = population + population/1000*birthRate - population/1000*deathRate;
             System.out.println("Год " + period + " численность населения составляет " + population);
             period ++;
         }
